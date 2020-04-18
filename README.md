@@ -26,12 +26,12 @@ Specify interface to bind, port and accept connections only from 192.168.1.100:
 
 ## Command line options
 
-Usage: ./QSocksProxyServer [options]
+    Usage: ./QSocksProxyServer [options]
 
-Options:
-  -h, --help                   Displays this help.
-  -p, --port <port>            The port on which the SOCKS server listens.
-  -i, --interface <interface>  The interface on which the SOCKS server listens.
-  --whitelist, -w <whitelist>  Whitelist a single IPv4 address to accept
-                               connections from.
-  --verbose, -v <verbose>      Verbose mode.
+    Options:
+      -h, --help                   Displays this help.
+      -p, --port <port>            The port on which the SOCKS server listens.
+      -i, --interface <interface>  The interface on which the SOCKS server listens.
+      --whitelist, -w <whitelist>  Whitelist a single IPv4 address to accept
+                                   connections from.
+      --verbose, -v <verbose>      Verbose mode.
