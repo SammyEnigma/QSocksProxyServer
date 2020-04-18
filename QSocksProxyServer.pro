@@ -22,3 +22,6 @@ SOURCES += main.cpp \
 HEADERS += \
     ClientHandler.h \
     SocksProxyServer.h
+
+DISTFILES += \
+    README.md
