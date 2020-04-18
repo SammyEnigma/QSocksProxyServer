@@ -6,12 +6,11 @@ SocksProxyServer::SocksProxyServer(QString address, quint16 port, QString whitel
     server = new QTcpServer();
     this->whitelist = QHostAddress(whitelist);
 
-    if (!server->listen(QHostAddress(address), port))
-	{
+    if (!server->listen(QHostAddress(address), port)) {
         qWarning() << "Unable to start the server:" << server->errorString();
         server->close();
-		return;
-	}
+        return;
+    }
 
     connect(server, &QTcpServer::newConnection, this, &SocksProxyServer::newConnection);
     qDebug() << "Server started at" << address << port;

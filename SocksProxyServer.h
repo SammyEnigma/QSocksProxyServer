@@ -5,7 +5,7 @@
 
 class SocksProxyServer: public QObject
 {
-	Q_OBJECT
+    Q_OBJECT
 
 private:
     QTcpServer *server;

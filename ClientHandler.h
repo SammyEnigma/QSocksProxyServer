@@ -3,7 +3,7 @@
 
 class SocksConnection: public QObject
 {
-	Q_OBJECT
+    Q_OBJECT
 public:
     SocksConnection(QTcpSocket * socket, QObject *parent = 0);
     ~SocksConnection();
@@ -12,7 +12,7 @@ private:
     QTcpSocket *clientSocket;
     QTcpSocket *targetSocket;
 
-	void startRedirect();
+    void startRedirect();
 
 private slots:
     void targetConnectionError(QAbstractSocket::SocketError);
